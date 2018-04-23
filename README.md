@@ -16,3 +16,6 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 空气净化器 | 程刁 | http://gitlab.hekr.me/i18nUI/air-cleaner | 自动化布局 | - | 2017-03-01 |  2017-03-08 | - |
 | 亿科成新风系统(k21) | 贺梦娇 | http://gitlab.hekr.me/web-app/ruifende-xinfeng | 普通 | - | 2017-03-16 |  2017-03-19 | - |
+| 睿德地暖 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-dinuan | 普通 | - | 2017-03-06 |  2017-03-12 | - |
+| 睿德中央空调 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-centerAir | 普通 | - | 2017-03-12 |  2017-03-16 | - |
+| 启正风扇灯 | 贺梦娇 | http://gitlab.hekr.me/web-app/qizheng-fan-lamp | 普通 | - | 2017-03-29 |  2017-03-30 | - |
