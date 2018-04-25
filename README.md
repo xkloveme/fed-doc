@@ -14,15 +14,15 @@
 ## 项目列表
 | 项目名称 | 开发人员 | 项目地址 | 类型（自动化布局/普通）| console账号密码 | 开始时间 | 结束时间 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 空气净化器 | 程刁 | http://gitlab.hekr.me/i18nUI/air-cleaner | 自动化布局 | - | 2017-03-01 |  2017-03-08 | - |
-| 睿德地暖 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-dinuan | 普通 | - | 2017-03-06 |  2017-03-12 | - |
-| 睿德中央空调 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-centerAir | 普通 | - | 2017-03-12 |  2017-03-16 | - |
-| 智能开关(插座) | 贺梦娇 | http://gitlab.hekr.me/i18nUI/Intelligent-switch | 自动化布局 | - | 2017-03-19 |  2017-03-22 | - |
-| 除湿器 | 贺梦娇 | http://gitlab.hekr.me/i18nUI/Dehumidifier | 自动化布局 | - | 2017-03-20 |  2017-03-22 | - |
-| 导轨式继电器 | 贺梦娇 | http://gitlab.hekr.me/web-app/relay | 普通 | - | 2017-03-23 |  2017-03-23 | - |
-| 启正风扇灯 | 贺梦娇 | http://gitlab.hekr.me/web-app/qizheng-fan-lamp | 普通 | - | 2017-03-29 |  2017-03-30 | - |
-| 新风机 | 贺梦娇 | http://gitlab.hekr.me/i18nUI/xinfeng | 自动化布局 | - | 2017-04-09 |  2017-04-11 | - |
-| 亿科成新风系统(k21) | 贺梦娇 | http://gitlab.hekr.me/web-app/ruifende-xinfeng | 普通 | - | 2017-04-15 |  2017-04-19 | - |
-| 灵汇新风机 | 郭春福 | git@gitlab.hekr.me:web-app/link-well.git | 一体化 | - | 2017-04-18 |
-| 海峡德越一体化 | 郭春福 | git@gitlab.hekr.me:web-app/hxdy-humidifier.git | 一体化 | - | 2017-04-22 |
+| 空气净化器 | 程刁 | http://gitlab.hekr.me/i18nUI/air-cleaner | 自动化布局 | - | 2018-03-01 |  2018-03-08 | - |
+| 睿德地暖 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-dinuan | 普通 | - | 2018-03-06 |  2018-03-12 | - |
+| 睿德中央空调 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-centerAir | 普通 | - | 2018-03-12 |  2018-03-16 | - |
+| 智能开关(插座) | 贺梦娇 | http://gitlab.hekr.me/i18nUI/Intelligent-switch | 自动化布局 | - | 2018-03-19 |  2018-03-22 | - |
+| 除湿器 | 贺梦娇 | http://gitlab.hekr.me/i18nUI/Dehumidifier | 自动化布局 | - | 2018-03-20 |  2018-03-22 | - |
+| 导轨式继电器 | 贺梦娇 | http://gitlab.hekr.me/web-app/relay | 普通 | - | 2018-03-23 |  2018-03-23 | - |
+| 启正风扇灯 | 贺梦娇 | http://gitlab.hekr.me/web-app/qizheng-fan-lamp | 普通 | - | 2018-03-29 |  2018-03-30 | - |
+| 新风机 | 贺梦娇 | http://gitlab.hekr.me/i18nUI/xinfeng | 自动化布局 | - | 2018-04-09 |  2018-04-11 | - |
+| 亿科成新风系统(k21) | 贺梦娇 | http://gitlab.hekr.me/web-app/ruifende-xinfeng | 普通 | - | 2018-04-15 |  2018-04-19 | - |
+| 灵汇新风机 | 郭春福 | http://git@gitlab.hekr.me:web-app/link-well.git | 一体化 | - | 2018-04-14 | 2018-04-18 |
+| 海峡德越一体化 | 郭春福 | http://git@gitlab.hekr.me:web-app/hxdy-humidifier.git | 一体化 | - | 2018-04-19 | 2018-04-22 |
 
