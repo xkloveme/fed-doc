@@ -23,6 +23,7 @@
 | 启正风扇灯 | 贺梦娇 | http://gitlab.hekr.me/web-app/qizheng-fan-lamp | 普通 | - | 2018-03-29 |  2018-03-30 | - |
 | 新风机 | 贺梦娇 | http://gitlab.hekr.me/i18nUI/xinfeng | 自动化布局 | - | 2018-04-09 |  2018-04-11 | - |
 | 亿科成新风系统(k21) | 贺梦娇 | http://gitlab.hekr.me/web-app/ruifende-xinfeng | 普通 | - | 2018-04-15 |  2018-04-19 | - |
-| 灵汇新风机 | 郭春福 | http://git@gitlab.hekr.me:web-app/link-well.git | 一体化 | - | 2018-04-14 | 2018-04-18 |
-| 海峡德越一体化 | 郭春福 | http://git@gitlab.hekr.me:web-app/hxdy-humidifier.git | 一体化 | - | 2018-04-19 | 2018-04-22 |
+| 灵汇新风机 | 郭春福 | http://gitlab.hekr.me/web-app/link-well | 一体化 | - | 2018-04-14 | 2018-04-18 |
+| 海峡德越一体化 | 郭春福 | http://gitlab.hekr.me/web-app/hxdy-humidifier | 一体化 | - | 2018-04-19 | 2018-04-22 |
+| 空气质量检测仪 | 程刁 | http://gitlab.hekr.me/web-app/air-quality-tester | 一体化 | - | 2018-01-18 | 2018-01-18 |
 
