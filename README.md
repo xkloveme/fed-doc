@@ -26,4 +26,5 @@
 | 灵汇新风机 | 郭春福 | http://gitlab.hekr.me/web-app/link-well | 一体化 | - | 2018-04-14 | 2018-04-18 |
 | 海峡德越一体化 | 郭春福 | http://gitlab.hekr.me/web-app/hxdy-humidifier | 一体化 | - | 2018-04-19 | 2018-04-22 |
 | 空气质量检测仪 | 程刁 | http://gitlab.hekr.me/web-app/air-quality-tester | 一体化 | - | 2018-01-18 | 2018-01-18 |
-
+| 触摸开关 | 程刁 | http://gitlab.hekr.me/i18nUI/touch-switch | 自动化布局 | - | 2017-03-08 | 2017-03-08 |
+| LED球泡灯 | 程刁 | http://gitlab.hekr.me/i18nUI/led-bulb-lamp | 自动化布局 | - | 2017-03-08 | 2017-03-08 |
