@@ -31,3 +31,4 @@
 | 亿科成新风系统(k21) | 贺梦娇 | http://gitlab.hekr.me/web-app/ruifende-xinfeng | 普通 | - | 2018-04-15 |  2018-04-19 | - |
 | 灵汇新风机 | 郭春福 | http://gitlab.hekr.me/web-app/link-well | 一体化 | - | 2018-04-14 | 2018-04-18 | - |
 | 海峡德越一体化 | 郭春福 | http://gitlab.hekr.me/web-app/hxdy-humidifier | 一体化 | - | 2018-04-19 | 2018-04-22 | - |
+| 天普新能源 | 贺梦娇 | http://gitlab.hekr.me/web-app/tianpu-new-energy | 普通 | - | 2018-04-25 |  2018-04-26 | - |
