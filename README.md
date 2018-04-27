@@ -29,7 +29,7 @@
 | 导轨式继电器 | 贺梦娇 | http://gitlab.hekr.me/web-app/relay | 普通 | - | 2018-03-23 |  2018-03-23 | - |
 | 启正风扇灯 | 贺梦娇 | http://gitlab.hekr.me/web-app/qizheng-fan-lamp | 普通 | - | 2018-03-29 |  2018-03-30 | - |
 | 亿科成新风系统(k21) | 贺梦娇 | http://gitlab.hekr.me/web-app/ruifende-xinfeng | 普通 | - | 2018-04-15 |  2018-04-19 | - |
-| 灵汇新风机 | 郭春福 | http://gitlab.hekr.me:web-app/link-well.git | 一体化 | - | 2018-04-14 | 2018-04-18 |
-| 海峡德越一体化 | 郭春福 | http://gitlab.hekr.me:web-app/hxdy-humidifier.git | 一体化 | - | 2018-04-19 | 2018-04-22 | - |
-| 深圳迈臣温控器 | 郭春福 | http://gitlab.hekr.me:web-app/maichen-wengkongqi.git | 一体化 | - | 2018-04-22 | 2018-04-26 | - |
+| 灵汇新风机 | 郭春福 | http://gitlab.hekr.me:web-app/link-well | 一体化 | - | 2018-04-14 | 2018-04-18 |
+| 海峡德越一体化 | 郭春福 | http://gitlab.hekr.me:web-app/hxdy-humidifier | 一体化 | - | 2018-04-19 | 2018-04-22 | - |
+| 深圳迈臣温控器 | 郭春福 | http://gitlab.hekr.me:web-app/maichen-wengkongqi | 一体化 | - | 2018-04-22 | 2018-04-26 | - |
 | 天普新能源 | 贺梦娇 | http://gitlab.hekr.me/web-app/tianpu-new-energy | 普通 | - | 2018-04-25 |  2018-04-26 | - |
