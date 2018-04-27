@@ -34,3 +34,4 @@
 | 深圳迈臣温控器 | 郭春福 | http://gitlab.hekr.me/web-app/maichen-wengkongqi | 一体化 | - | 2018-04-22 | 2018-04-26 | - |
 | 天普新能源 | 贺梦娇 | http://gitlab.hekr.me/web-app/tianpu-new-energy | 普通 | - | 2018-04-25 |  2018-04-26 | - |
 | 中电华南新风机 | 郭春福 | http://gitlab.hekr.me/web-app/zhongdianhuanan-xinfeng | 一体化 | - | 2018-04-21 |  2018-04-24 | - |
+| 中电华南空气质量传感器 | 郭春福 | http://http://gitlab.hekr.me/web-app/air-quality-sensor | 一体化 | - | 2018-04-21 |  2018-04-26 | - |
