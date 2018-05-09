@@ -12,7 +12,7 @@
 ```
 
 ## 项目列表
-| 项目名称 | 开发人员 | 项目地址 | 类型（自动化布局/普通）| console账号密码 | 开始时间 | 结束时间 | 备注 |
+| 项目名称 | 开发人员 | 项目地址 | 类型（自动化布局/一体化）| console账号密码 | 开始时间 | 结束时间 | 备注 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 万能控制页面 | 程刁 | http://gitlab.hekr.me/i18nUI/hekr-universal-page | 自动化布局 | - | 2018-03-04 | 2018-03-04 | - |
 | 空气净化器 | 程刁 | http://gitlab.hekr.me/i18nUI/air-cleaner | 自动化布局 | - | 2018-03-01 |  2018-03-08 | - |
@@ -24,16 +24,17 @@
 | 新风机 | 贺梦娇 | http://gitlab.hekr.me/i18nUI/xinfengji | 自动化布局 | - | 2018-04-09 |  2018-04-11 | - |
 | 除湿器 | 贺梦娇 | http://gitlab.hekr.me/i18nUI/dehumidifier | 自动化布局 | - | 2018-03-20 |  2018-03-22 | - |
 | 空气质量检测仪 | 程刁 | http://gitlab.hekr.me/web-app/air-quality-tester | 一体化 | - | 2018-01-18 | 2018-01-18 | - |
-| 睿德地暖 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-dinuan | 普通 | - | 2018-03-06 |  2018-03-12 | - |
-| 睿德中央空调 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-centerAir | 普通 | - | 2018-03-12 |  2018-03-16 | - |
-| 导轨式继电器 | 贺梦娇 | http://gitlab.hekr.me/web-app/relay | 普通 | - | 2018-03-23 |  2018-03-23 | - |
-| 启正风扇灯 | 贺梦娇 | http://gitlab.hekr.me/web-app/qizheng-fan-lamp | 普通 | - | 2018-03-29 |  2018-03-30 | - |
-| 亿科成新风系统(k21) | 贺梦娇 | http://gitlab.hekr.me/web-app/ruifende-xinfeng | 普通 | - | 2018-04-15 |  2018-04-19 | - |
+| 睿德地暖 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-dinuan | 一体化 | - | 2018-03-06 |  2018-03-12 | - |
+| 睿德中央空调 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-centerAir | 一体化 | - | 2018-03-12 |  2018-03-16 | - |
+| 导轨式继电器 | 贺梦娇 | http://gitlab.hekr.me/web-app/relay | 一体化 | - | 2018-03-23 |  2018-03-23 | - |
+| 启正风扇灯 | 贺梦娇 | http://gitlab.hekr.me/web-app/qizheng-fan-lamp | 一体化 | - | 2018-03-29 |  2018-03-30 | - |
+| 亿科成新风系统(k21) | 贺梦娇 | http://gitlab.hekr.me/web-app/ruifende-xinfeng | 一体化 | - | 2018-04-15 |  2018-04-19 | - |
 | 灵汇新风机 | 郭春福 | http://gitlab.hekr.me/web-app/link-well | 一体化 | - | 2018-04-14 | 2018-04-18 |
 | 海峡德越一体化 | 郭春福 | http://gitlab.hekr.me/web-app/hxdy-humidifier | 一体化 | - | 2018-04-19 | 2018-04-22 | - |
 | 深圳迈臣温控器 | 郭春福 | http://gitlab.hekr.me/web-app/maichen-wengkongqi | 一体化 | - | 2018-04-22 | 2018-04-26 | - |
-| 天普新能源 | 贺梦娇 | http://gitlab.hekr.me/web-app/tianpu-new-energy | 普通 | - | 2018-04-25 |  2018-04-26 | - |
+| 天普新能源 | 贺梦娇 | http://gitlab.hekr.me/web-app/tianpu-new-energy | 一体化 | - | 2018-04-25 |  2018-04-26 | - |
 | 中电华南新风机 | 郭春福 | http://gitlab.hekr.me/web-app/zhongdianhuanan-xinfeng | 一体化 | - | 2018-04-21 |  2018-04-24 | - |
 | 中电华南空气质量传感器 | 郭春福 | http://gitlab.hekr.me/web-app/air-quality-sensor | 一体化 | - | 2018-04-21 |  2018-04-26 | - |
-| 天普新能源(新版) | 贺梦娇 | http://gitlab.hekr.me/web-app/tianpu-new-energy-last-version | 普通 | - | 2018-04-27 |  2018-04-27 | - |
-| 智能电表 | 贺梦娇 | http://gitlab.hekr.me/web-app/smart-meter | 普通 | - | 2018-05-05 |  2018-05-06 | - |
+| 天普新能源(新版) | 贺梦娇 | http://gitlab.hekr.me/web-app/tianpu-new-energy-last-version | 一体化 | - | 2018-04-27 |  2018-04-27 | - |
+| 智能电表 | 贺梦娇 | http://gitlab.hekr.me/web-app/smart-meter | 一体化 | - | 2018-05-05 |  2018-05-06 | - |
+| 冷杉烘干机 | 贺梦娇 | http://gitlab.hekr.me/web-app/lengshan-dehum-dryer | 一体化 | - | 2018-04-22 |  2018-05-08 | - |
