@@ -38,3 +38,4 @@
 | 天普新能源(新版) | 贺梦娇 | http://gitlab.hekr.me/web-app/tianpu-new-energy-last-version | 一体化 | - | 2018-04-27 |  2018-04-27 | - |
 | 智能电表 | 贺梦娇 | http://gitlab.hekr.me/web-app/smart-meter | 一体化 | - | 2018-05-05 |  2018-05-06 | - |
 | 冷杉烘干机 | 贺梦娇 | http://gitlab.hekr.me/web-app/lengshan-dehum-dryer | 一体化 | - | 2018-04-22 |  2018-05-08 | - |
+| 杰晟壁挂炉 | 郭春福 | http://gitlab.hekr.me/web-app/gdjason-bigualu | 一体化 | - | 2018-05-07 |  2018-05-09 | - |
