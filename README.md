@@ -40,3 +40,4 @@
 | 冷杉烘干机 | 贺梦娇 | http://gitlab.hekr.me/web-app/lengshan-dehum-dryer | 一体化 | - | 2018-04-22 |  2018-05-08 | - |
 | 杰晟壁挂炉 | 郭春福 | http://gitlab.hekr.me/web-app/gdjason-bigualu | 一体化 | - | 2018-05-07 |  2018-05-09 | - |
 | 特林空调 | 贺梦娇 | http://gitlab.hekr.me/web-app/telin-air | 一体化 | - | 2018-05-10 |  2018-05-10 | - |
+| 宇泰温控器 | 贺梦娇 | http://gitlab.hekr.me/web-app/yutai-thermostat | 一体化 | - | 2018-05-09 |  2018-05-10 | - |
