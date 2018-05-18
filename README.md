@@ -43,3 +43,4 @@
 | 宇泰温控器 | 贺梦娇 | http://gitlab.hekr.me/web-app/yutai-thermostat | 一体化 | - | 2018-05-09 |  2018-05-10 | - |
 | 蜂群智能门锁 | 郭春福 | http://gitlab.hekr.me/web-app/fengqun-lock | 一体化 | - | 2018-05-02 |  2018-05-10 | - |
 | 斯凯沃夫温控器 | 贺梦娇 | http://gitlab.hekr.me/web-app/sikaiwofu-thermostat | 一体化 | - | 2018-05-13 |  2018-05-13 | - |
+| 清清环保 | 贺梦娇 | http://gitlab.hekr.me/web-app/qingqing-environment-protection | 一体化 | - | 2018-05-17 |  2018-05-18 | - |
