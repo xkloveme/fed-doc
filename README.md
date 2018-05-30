@@ -46,3 +46,4 @@
 | 清清环保 | 贺梦娇 | http://gitlab.hekr.me/web-app/qingqing-environment-protection | 一体化 | - | 2018-05-17 |  2018-05-18 | - |
 | 悦赏智能门锁 | 郭春福 | http://gitlab.hekr.me/web-app/yueshang-lock | 一体化 | - | 2018-05-21 |  2018-05-23 | - |
 | 兴达恒业采暖炉（产品1） | 郭春福 | http://gitlab.hekr.me/web-app/xingdahengye-furnace1 | 一体化 | - | 2018-05-12 |  2018-05-23 | - |
+| 兴达恒业采暖炉（产品3） | 郭春福 | http://gitlab.hekr.me/web-app/xingdahengye-furnace3 | 一体化 | - | 2018-05-24 |  2018-05-30 | - |
