@@ -1,50 +1,13 @@
-# 前端APP H5控制页面项目记录
+# 前端APP H5控制页面开发指南
 
-## 前端文件资源管理
+1. 公司官方文档：http://docs.hekr.me
+2. console云平台：https://console.hekr.me
 
-为了有效的管理前端的文件资源，特别做如下几个规定：
-1. 在开发的时候，需要把设计部门提供的UI文件zip包放到项目中去，zip包命名为项目名称，便于后面维护的时候不至于找不到设计的页面。
-2. 在项目中用到的图标都在iconfont上建立一个项目，并且在形目的README文件中指明图标地址，可参考下面示例
+## 目录
 
-```
-## 项目图标
-[迪文除湿机](http://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=597875&keyword=)
-```
-
-## 项目列表
-| 项目名称 | 开发人员 | 项目地址 | 类型（自动化布局/一体化）| console账号密码 | 开始时间 | 结束时间 | 备注 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 万能控制页面 | 程刁 | http://gitlab.hekr.me/i18nUI/hekr-universal-page | 自动化布局 | - | 2018-03-04 | 2018-03-04 | - |
-| 空气净化器 | 程刁 | http://gitlab.hekr.me/i18nUI/air-cleaner | 自动化布局 | - | 2018-03-01 |  2018-03-08 | - |
-| 触摸开关 | 程刁 | http://gitlab.hekr.me/i18nUI/touch-switch | 自动化布局 | - | 2017-03-08 | 2017-03-08 | - |
-| LED球泡灯 | 程刁 | http://gitlab.hekr.me/i18nUI/led-bulb-lamp | 自动化布局 | - | 2017-03-08 | 2017-03-08 | - |
-| 取暖器 | 王振超 | http://gitlab.hekr.me/i18nUI/heater | 自动化布局 | - | 2018-03-22  | 2018-03-23 | - |
-| 净水器 | 王振超 | http://gitlab.hekr.me/i18nUI/water-purifier | 自动化布局 | - | 2018-03-22  | 2018-03-23 | - |
-| 智能开关(插座) | 贺梦娇 | http://gitlab.hekr.me/i18nUI/intelligent-switch | 自动化布局 | - | 2018-03-19 |  2018-03-22 | - |
-| 新风机 | 贺梦娇 | http://gitlab.hekr.me/i18nUI/xinfengji | 自动化布局 | - | 2018-04-09 |  2018-04-11 | - |
-| 除湿器 | 贺梦娇 | http://gitlab.hekr.me/i18nUI/dehumidifier | 自动化布局 | - | 2018-03-20 |  2018-03-22 | - |
-| 空气质量检测仪 | 程刁 | http://gitlab.hekr.me/web-app/air-quality-tester | 一体化 | - | 2018-01-18 | 2018-01-18 | - |
-| 睿德地暖 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-dinuan | 一体化 | - | 2018-03-06 |  2018-03-12 | - |
-| 睿德中央空调 | 贺梦娇 | http://gitlab.hekr.me/web-app/ruide-centerAir | 一体化 | - | 2018-03-12 |  2018-03-16 | - |
-| 导轨式继电器 | 贺梦娇 | http://gitlab.hekr.me/web-app/relay | 一体化 | - | 2018-03-23 |  2018-03-23 | - |
-| 启正风扇灯 | 贺梦娇 | http://gitlab.hekr.me/web-app/qizheng-fan-lamp | 一体化 | - | 2018-03-29 |  2018-03-30 | - |
-| 亿科成新风系统(k21) | 贺梦娇 | http://gitlab.hekr.me/web-app/ruifende-xinfeng | 一体化 | - | 2018-04-15 |  2018-04-19 | - |
-| 灵汇新风机 | 郭春福 | http://gitlab.hekr.me/web-app/link-well | 一体化 | - | 2018-04-14 | 2018-04-18 |
-| 海峡德越一体化 | 郭春福 | http://gitlab.hekr.me/web-app/hxdy-humidifier | 一体化 | - | 2018-04-19 | 2018-04-22 | - |
-| 深圳迈臣温控器 | 郭春福 | http://gitlab.hekr.me/web-app/maichen-wengkongqi | 一体化 | - | 2018-04-22 | 2018-04-26 | - |
-| 天普新能源 | 贺梦娇 | http://gitlab.hekr.me/web-app/tianpu-new-energy | 一体化 | - | 2018-04-25 |  2018-04-26 | - |
-| 中电华南新风机 | 郭春福 | http://gitlab.hekr.me/web-app/zhongdianhuanan-xinfeng | 一体化 | - | 2018-04-21 |  2018-04-24 | - |
-| 中电华南空气质量传感器 | 郭春福 | http://gitlab.hekr.me/web-app/air-quality-sensor | 一体化 | - | 2018-04-21 |  2018-04-26 | - |
-| 天普新能源(新版) | 贺梦娇 | http://gitlab.hekr.me/web-app/tianpu-new-energy-last-version | 一体化 | - | 2018-04-27 |  2018-04-27 | - |
-| 智能电表 | 贺梦娇 | http://gitlab.hekr.me/web-app/smart-meter | 一体化 | - | 2018-05-05 |  2018-05-06 | - |
-| 冷杉烘干机 | 贺梦娇 | http://gitlab.hekr.me/web-app/lengshan-dehum-dryer | 一体化 | - | 2018-04-22 |  2018-05-08 | - |
-| 杰晟壁挂炉 | 郭春福 | http://gitlab.hekr.me/web-app/gdjason-bigualu | 一体化 | - | 2018-05-07 |  2018-05-09 | - |
-| 特林空调 | 贺梦娇 | http://gitlab.hekr.me/web-app/telin-air | 一体化 | - | 2018-05-10 |  2018-05-10 | - |
-| 宇泰温控器 | 贺梦娇 | http://gitlab.hekr.me/web-app/yutai-thermostat | 一体化 | - | 2018-05-09 |  2018-05-10 | - |
-| 蜂群智能门锁 | 郭春福 | http://gitlab.hekr.me/web-app/fengqun-lock | 一体化 | - | 2018-05-02 |  2018-05-10 | - |
-| 斯凯沃夫温控器 | 贺梦娇 | http://gitlab.hekr.me/web-app/sikaiwofu-thermostat | 一体化 | - | 2018-05-13 |  2018-05-13 | - |
-| 清清环保 | 贺梦娇 | http://gitlab.hekr.me/web-app/qingqing-environment-protection | 一体化 | - | 2018-05-17 |  2018-05-18 | - |
-| 悦赏智能门锁 | 郭春福 | http://gitlab.hekr.me/web-app/yueshang-lock | 一体化 | - | 2018-05-21 |  2018-05-23 | - |
-| 兴达恒业采暖炉（产品1） | 郭春福 | http://gitlab.hekr.me/web-app/xingdahengye-furnace1 | 一体化 | - | 2018-05-12 |  2018-05-23 | - |
-| 兴达恒业采暖炉（产品3） | 郭春福 | http://gitlab.hekr.me/web-app/xingdahengye-furnace3 | 一体化 | - | 2018-05-24 |  2018-05-30 | - |
-| 科力鑫-空净 | 郭春福 | http://gitlab.hekr.me/web-app/kelixin-air-purifyer | 一体化 | - | 2018-05-29 |  2018-05-31 | - |
+* [NPM源使用](./NPM源使用.md)
+* [SDK文档](./SDK文档.md)
+* [前端文件资源管理](./前端文件资源管理.md)
+* [通用H5页面开发](./通用H5页面开发.md)
+* [页面自动化布局类型项目开发](./自动化布局页面开发注意事项.md)
+* [群控页面开发](./群控页面开发.md)
