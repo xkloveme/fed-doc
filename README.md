@@ -2,6 +2,8 @@
 
 1. 公司官方文档：http://docs.hekr.me
 2. console云平台：https://console.hekr.me
+4. npm源：http://npm.hekr.me
+3. mock平台：http://mock.hekr.me
 
 ## 目录
 
