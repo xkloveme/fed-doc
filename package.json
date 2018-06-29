@@ -1,0 +1,27 @@
+{
+  "name": "fed-docs",
+  "version": "1.0.0",
+  "description": "前端文档",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.hekr.me:front-end/fed-docs.git"
+  },
+  "keywords": [
+    "fed",
+    "docs",
+    "文档"
+  ],
+  "author": "nashaofu",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^0.10.2"
+  }
+}
