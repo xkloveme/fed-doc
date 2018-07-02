@@ -4,31 +4,18 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: '文档资源',
-        items: [
-          {
-            text: 'hekr-cli',
-            link: 'http://10.10.1.3:7777/hekr-cli/index.html'
-          },
-          {
-            text: 'hekr-h5-sdk',
-            link: 'http://10.10.1.3:7777/hekr-h5-sdk/index.html'
-          },
-          {
-            text: 'hekr-components',
-            link: 'http://10.10.1.3:7777/hekr-components/index.html'
-          },
-          {
-            text: 'auto',
-            link: 'http://10.10.1.3:7777/auto/index.html'
-          }
-        ]
+        text: 'Hekr-components',
+        link: 'http://10.10.1.3:7777/hekr-components/index.html'
+      },
+      {
+        text: 'Auto',
+        link: 'http://10.10.1.3:7777/auto/index.html'
       }
     ],
-    sidebar: 'auto'
+    sidebar: 'auto',
+    lastUpdated: '最后更新'
   },
   serviceWorker: true,
-  dest: 'dist',
   markdown: {
     lineNumbers: true
   }
