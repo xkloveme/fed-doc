@@ -1,11 +1,5 @@
 部署到杭州办公测试环境:
   script:
-    - git clone git@gitlab.hekr.me:front-end/virtual.git
-    - git clone git@gitlab.hekr.me:front-end/hekr-cli.git
-    - git clone git@gitlab.hekr.me:front-end/hekr-h5-sdk.git
-    - cp virtual/README.md docs/
-    - cp hekr-cli/README.md docs/
-    - cp hekr-h5-sdk/README.md docs/
     - npm install --registry=https://registry.npm.taobao.org
     - npm run docs:build
     - rm -rf `ls /home/diao.cheng/fed-docs/ | egrep -v '(hekr-components|auto)' | sed 's:^:/home/diao.cheng/fed-docs/:'`
