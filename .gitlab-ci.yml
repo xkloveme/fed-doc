@@ -1,12 +1,5 @@
 部署到杭州办公测试环境:
-  variables:
-    GIT_SUBMODULE_STRATEGY: recursive
-  before_script:
-    - git submodule update --remote --init --recursive
   script:
-    - cp virtual/README.md docs/virtual.md
-    - cp hekr-cli/README.md docs/hekr-cli.md
-    - cp hekr-h5-sdk/README.md docs/hekr-h5-sdk.md
     - npm install --registry=https://registry.npm.taobao.org
     - npm run docs:build
     - rm -rf `ls /home/diao.cheng/fed-docs/ | egrep -v '(hekr-components|auto)' | sed 's:^:/home/diao.cheng/fed-docs/:'`
