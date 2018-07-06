@@ -98,11 +98,11 @@ pid: 01316026796
 
 ### 下载链接
 
-| APP名称 | 安卓测试 | iOS测试 | 安卓线上 | iOS线上 |
-| : --- : | : --- : | : --- : | : --- : | : --- : |
-| 海水湾 | [LMZb](https://www.pgyer.com/LMZb) | [dQsc](https://www.pgyer.com/dQsc) | [m33a](https://www.pgyer.com/m33a) | [M8xh](https://www.pgyer.com/M8xh) |
-| 电可安 | [Y7Dq](https://www.pgyer.com/Y7Dq) | [ixSF](https://www.pgyer.com/ixSF) | [hLmo](https://www.pgyer.com/hLmo) | [Uy9c](https://www.pgyer.com/Uy9c) |
-| 中科城安 | 下载链接 | 下载链接 | 下载链接 | 下载链接 |
+APP名称 | 安卓测试 | iOS测试 | 安卓线上 | iOS线上
+- | - | - | - | - 
+海水湾 | [LMZb](https://www.pgyer.com/LMZb) | [dQsc](https://www.pgyer.com/dQsc) | [m33a](https://www.pgyer.com/m33a) | [M8xh](https://www.pgyer.com/M8xh)
+电可安 | [Y7Dq](https://www.pgyer.com/Y7Dq) | [ixSF](https://www.pgyer.com/ixSF) | [hLmo](https://www.pgyer.com/hLmo) | [Uy9c](https://www.pgyer.com/Uy9c)
+中科城安 | [ZgVE](https://www.pgyer.com/ZgVE) | [ErI4](https://www.pgyer.com/ErI4) | [ZKE0](https://www.pgyer.com/ZKE0) | [3IRE](https://www.pgyer.com/3IRE)
 
 ### 权限说明
 
@@ -113,11 +113,17 @@ APP主要用到下列四个权限：
 3. `device$delete`: 设备删除权限。无权对页面影响：首页列表不能左滑。
 4. `warning$handle`: 告警处理权限。无权对页面影响：告警和故障消息页面无处理按钮。
 
+### 用户类型说明
+
+* 用户分为普通用户和后台分配账号。
+* 普通用户是在APP上注册的用户，后台分配账号由管理后台分配产生。
+* 根据用户信息中是否由`enterprise`字段来区分。
+
 ### 用户Token说明
 
 * 用户登陆token使用`localstrage`存储，`access_token`24小时过期，`refresh_token`30天过期。
 * app用户不手动退出，打开app都要保持登陆状态。
-* 存储的key值在`src/assets/utils/auth.js`里修改，注意每个项目key值修改一下。
+* 存储的key值在`src/store/state.js`里修改，注意每个项目key值修改一下。
 
 ### Matrix说明
 
@@ -129,6 +135,7 @@ APP主要用到下列四个权限：
 * 用户登陆token信息。
 * 安装位置和所属地址信息。绑定设备成功页面会从获取上一次绑定设备的安装位置和所属地址。
 * clientId信息。一旦获取到clientId就存储起来，下次打开app的时候先从缓存读取绑定。
+* 缓存的key值统一在`src/store/state.js`中修改。
 
 ## 原生APP交互
 
@@ -177,13 +184,17 @@ APP仅支持手机号注册，具体接口文档阅读[注册接口](http://docs
 
 ### 扫码绑定
 
+* 绑定类型分为两类：一是根据devTid和bindKey绑定，二是根据短码和短码密码进行绑定。根据二维码返回的结果来区分。
+* 绑定根据用户类型有所区分：普通用户获取到信息后直接绑定，后台分配账号先查询设备状态再进行绑定。
+
 绑定逻辑见下图
 
-![bind](./bind.png)
+![bind](./bind2.png)
 
 ### 消息推送
 
 * 打开APP先从缓存读取clientId, 如果缓存没有，通过`Matrix.getClientId()`获取，全局监听 `getClientId` 事件获取app传过来的clientId进行绑定。
+* 推送类型有：个推（GETUI)、小米（XIAOMI）、华为（HUAWEI）
 * 手动退出及时解绑。
 
 ### webSocket连接
