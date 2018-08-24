@@ -8,7 +8,13 @@
 
 ## 流程图
 
+一张图片从本地路径path转成链接url过程：
+
 ![upload](./upload.png)
+
+多张图片上传：
+
+![multigraph-upload](./multigraph-upload.png)
 
 ## 实现
 
@@ -64,3 +70,27 @@ this.$oss.multipartUpload(imgUrl, file)
 imgUrl为文件上传路径，上传之前先定好文件上传路径规则，避免混乱。
 
 > 常兴图片存储路径规则为: /inspect/{api}/{userNo}/{formKey}/{checkNo}/{文件名}
+
+### 多图并发
+
+```js
+getImgUrlList (formKey, list) {
+  return parallelToSerial(list, ([ parent ]) => {
+    let key = formKey + '/' + parent.checkNo
+    const imgPathList = parent.imgPathList
+    const imgUrlList = parent.imgUrlList
+
+    // 以5张一次的速度并发
+    return parallelToSerial(imgPathList, images => {
+      const uploadList = images.map(path => {
+        const req = this.getPhotoFromPath(path, key)
+        req.then(url => {
+          imgUrlList.push(url)
+        })
+        return req
+      })
+      return Promise.all(uploadList)
+    }, 5)
+  })
+}
+```
