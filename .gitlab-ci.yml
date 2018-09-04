@@ -2,7 +2,7 @@
   script:
     - npm install --registry=https://registry.npm.taobao.org
     - npm run build
-    - rm -rf `ls /data/www/fed-docs/fed-docs/ | egrep -v '(hekr-components|auto)' | sed 's:^:/data/www/fed-docs/:'`
+    - rm -rf `ls /data/www/fed-docs/ | egrep -v '(hekr-components|auto)' | sed 's:^:/data/www/fed-docs/:'`
     - cp -R docs/.vuepress/dist/* /data/www/fed-docs/
   tags:
     - hz-test
