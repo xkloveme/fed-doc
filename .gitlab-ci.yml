@@ -2,9 +2,13 @@ cache:
   paths:
   - node_modules/
 
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+before_script:
+  - git submodule update --remote --init --recursive
+
 部署到杭州办公测试环境:
-  before_script:
-    - git submodule update --remote --recursive
   script:
     # - npm install --registry=https://registry.npm.taobao.org
     - ls
