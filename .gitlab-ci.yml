@@ -1,12 +1,10 @@
 cache:
-  key: "$CI_COMMIT_REF_SLUG"
   paths:
-    - node_modules/
-
+  - node_modules/
 
 部署到杭州办公测试环境:
   before_script:
-    - git submodule update
+    - git submodule update --remote --recursive
   script:
     # - npm install --registry=https://registry.npm.taobao.org
     - ls
