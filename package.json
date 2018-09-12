@@ -2,7 +2,6 @@
   "name": "fed-docs",
   "version": "1.0.0",
   "description": "前端文档",
-  "main": "index.js",
   "directories": {
     "doc": "docs"
   },
