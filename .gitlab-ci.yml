@@ -11,9 +11,6 @@ before_script:
 部署到杭州办公测试环境:
   script:
     # - npm install --registry=https://registry.npm.taobao.org
-    - ls
-    - cd hekr-h5-sdk
-    - ls
     - cp hekr-h5-sdk/README.md docs/hekr-h5-sdk.md
     - cp hekr-cli/README.md docs/hekr-cli.md
     - cp virtual/README.md docs/virtual.md
