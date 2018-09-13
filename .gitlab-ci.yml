@@ -15,7 +15,7 @@ before_script:
     - cp hekr-cli/README.md docs/hekr-cli.md
     - cp virtual/README.md docs/virtual.md
     - npm run build
-    - rm -rf `ls /data/www/fed-docs/ | egrep -v '(hekr-components|auto)' | sed 's:^:/data/www/fed-docs/:'`
+    - rm -rf `ls /data/www/fed-docs/ | egrep -v '(hekr-components|auto|hekr-admin)' | sed 's:^:/data/www/fed-docs/:'`
     - cp -R docs/.vuepress/dist/* /data/www/fed-docs/
   tags:
     - hz-test
