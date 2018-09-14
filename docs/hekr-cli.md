@@ -8,7 +8,7 @@
 
 ``` bash
 # 更改 npm 源
-$ npm config set registry http://npm.hekr.me:4873
+$ npm config set registry http://npm.hekr.me
 
 # 全局安装
 $ npm install --global @hekr/hekr-cli
@@ -21,7 +21,7 @@ $ npm install --global @hekr/hekr-cli
 ```bash
 $ hekr [cmd] -t
 # 或者
-$ hekr [cmd] --test 
+$ hekr [cmd] --test
 ```
 
 ## 使用
@@ -399,7 +399,7 @@ Warning: No product in keys.json
 ``` bash
 $ hekr upload --help
 
-Usage: hekr-upload  
+Usage: hekr-upload
 
 Upload H5 page or map command
 

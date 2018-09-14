@@ -1,9 +1,9 @@
 [submodule "virtual"]
 	path = virtual
-	url = git@gitlab.hekr.me:front-end/virtual.git
+	url = ../virtual.git
 [submodule "hekr-cli"]
 	path = hekr-cli
-	url = git@gitlab.hekr.me:front-end/hekr-cli.git
+	url = ../hekr-cli.git
 [submodule "hekr-h5-sdk"]
 	path = hekr-h5-sdk
-	url = git@gitlab.hekr.me:front-end/hekr-h5-sdk.git
+	url = ../hekr-h5-sdk.git

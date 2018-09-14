@@ -10,6 +10,10 @@ module.exports = {
       {
         text: 'Auto',
         link: 'http://10.10.1.2:7777/auto/index.html'
+      },
+      {
+        text: 'Hekr-admin',
+        link: 'http://10.10.1.2:7777/hekr-admin/index.html'
       }
     ],
     sidebar: 'auto',
