@@ -184,4 +184,4 @@ clientId由APP提供。
 
 ### 6.1 拉取位置天气
 
-接口地址：` https://user-openapi.hekr.me/external/now?location=30.274660:120.122529&sign=xxx&timestamp=1536916957642`
+接口地址：` https://user-openapi.hekr.me/external/now?location=30.274660:120.122529`
