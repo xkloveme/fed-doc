@@ -48,6 +48,12 @@
 
 如 ` https://user-openapi.hekr.me/device?&page=0&size=20 `
 
+### 2.2 设备固件更新
+
+[查询固件是否更新](http://docs.hekr.me/v4/%E4%BA%91%E7%AB%AFAPI/%E4%BC%81%E4%B8%9AAPI/#%E5%88%A4%E6%96%AD%E8%AE%BE%E5%A4%87%E6%A8%A1%E5%9D%97%E5%9B%BA%E4%BB%B6%E6%98%AF%E5%90%A6%E9%9C%80%E8%A6%81%E5%8D%87%E7%BA%A7)
+
+执行固件更新接口，云端待开发。
+
 ## 3. 系统设置
 
 ### 3.1 消息中心
@@ -185,3 +191,4 @@ clientId由APP提供。
 ### 6.1 拉取位置天气
 
 接口地址：` https://user-openapi.hekr.me/external/now?location=30.274660:120.122529`
+
