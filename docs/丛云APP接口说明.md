@@ -190,5 +190,13 @@ clientId由APP提供。
 
 ### 6.1 拉取位置天气
 
-接口地址：` https://user-openapi.hekr.me/external/now?location=30.274660:120.122529`
+```
+curl -v -X GET \
+    -H "Authorization: Bearer {JWT_TOKEN}" \
+    -H "Accept: application/json" \
+    "https://user-openapi.hekr.me/external/now?location=30.274660:120.122529"
+```
+location为定位的经纬度。	
+定位使用高德JSSDK，具体见[定位](https://lbs.amap.com/api/javascript-api/reference/location)
 
+key使用  `38b5cc7527ad54fe1bceb8360b309934`
