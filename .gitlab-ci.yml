@@ -14,6 +14,7 @@ before_script:
     - cp hekr-h5-sdk/README.md docs/hekr-h5-sdk.md
     - cp hekr-cli/README.md docs/hekr-cli.md
     - cp virtual/README.md docs/virtual.md
+    - cp mobile-document/文档/行业文档/一般行业项目接口/接口.md docs/matrix.md
     - npm run build
     - rm -rf `ls /data/www/fed-docs/ | egrep -v '(hekr-components|auto|hekr-admin)' | sed 's:^:/data/www/fed-docs/:'`
     - cp -R docs/.vuepress/dist/* /data/www/fed-docs/

@@ -7,3 +7,6 @@
 [submodule "hekr-h5-sdk"]
 	path = hekr-h5-sdk
 	url = ../hekr-h5-sdk.git
+[submodule "mobile-document"]
+	path = mobile-document
+	url = ../../mobile/document.git
