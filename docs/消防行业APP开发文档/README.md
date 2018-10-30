@@ -99,7 +99,7 @@ pid: 01316026796
 ### 下载链接
 
 APP名称 | 安卓测试 | iOS测试 | 安卓线上 | iOS线上
-- | - | - | - | - 
+- | - | - | - | -
 海水湾 | [LMZb](https://www.pgyer.com/LMZb) | [dQsc](https://www.pgyer.com/dQsc) | [m33a](https://www.pgyer.com/m33a) | [M8xh](https://www.pgyer.com/M8xh)
 电可安 | [Y7Dq](https://www.pgyer.com/Y7Dq) | [ixSF](https://www.pgyer.com/ixSF) | [hLmo](https://www.pgyer.com/hLmo) | [Uy9c](https://www.pgyer.com/Uy9c)
 中科城安 | [ZgVE](https://www.pgyer.com/ZgVE) | [ErI4](https://www.pgyer.com/ErI4) | [ZKE0](https://www.pgyer.com/ZKE0) | [3IRE](https://www.pgyer.com/3IRE)
@@ -137,11 +137,11 @@ APP主要用到下列四个权限：
 * clientId信息。一旦获取到clientId就存储起来，下次打开app的时候先从缓存读取绑定。
 * 缓存的key值统一在`src/store/state.js`中修改。
 
-## 原生APP交互
+## 原生APP交互[Matrix文档](../matrix.md)
 
 ### 安卓返回键
 
-* 安卓返回的时候会调用一次 `Matrix.back()` 方法。 
+* 安卓返回的时候会调用一次 `Matrix.back()` 方法。
 * 最初back方法是个空函数，可以在`APP.vue`中重置back方法。
 
 ### 设置状态栏颜色
