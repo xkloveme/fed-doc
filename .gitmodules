@@ -1,12 +1,12 @@
+[submodule "sdk"]
+	path = sdk
+	url = ../sdk
 [submodule "virtual"]
 	path = virtual
 	url = ../virtual.git
 [submodule "hekr-cli"]
 	path = hekr-cli
 	url = ../hekr-cli.git
-[submodule "hekr-h5-sdk"]
-	path = hekr-h5-sdk
-	url = ../hekr-h5-sdk.git
 [submodule "mobile-document"]
 	path = mobile-document
 	url = ../../mobile/document.git

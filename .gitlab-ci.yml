@@ -11,7 +11,12 @@ before_script:
 部署到杭州办公测试环境:
   script:
     - npm install --registry=https://registry.npm.taobao.org
-    - cp hekr-h5-sdk/README.md docs/hekr-h5-sdk.md
+    # 复制sdk项目下文件
+    - cp sdk/README.md docs/sdk/README.md
+    - cp sdk/packages/sdk-h5/README.md docs/sdk/packages/sdk-h5/README.md
+    - cp sdk/packages/sdk-web/README.md docs/sdk/packages/sdk-web/README.md
+    - cp sdk/packages/sdk-codec/README.md docs/sdk/packages/sdk-codec/README.md
+
     - cp hekr-cli/README.md docs/hekr-cli.md
     - cp virtual/README.md docs/virtual.md
     - cp mobile-document/文档/行业项目/一般行业项目接口/接口.md docs/matrix.md
