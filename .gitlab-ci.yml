@@ -11,7 +11,6 @@ before_script:
 部署到杭州办公测试环境:
   script:
     - npm install --registry=https://registry.npm.taobao.org
-    - cp mobile-document/文档/行业项目/一般行业项目接口/接口.md docs/matrix.md
     - npm run build
     - rm -rf `ls /data/www/fed-docs/ | egrep -v '(hekr-components|auto|hekr-admin)' | sed 's:^:/data/www/fed-docs/:'`
     - cp -R docs/.vuepress/dist/* /data/www/fed-docs/

@@ -7,4 +7,6 @@
 [submodule "docs/hekr-cli"]
 	path = docs/hekr-cli
 	url = ../hekr-cli.git
-
+[submodule "mobile-document"]
+	path = docs/mobile-document
+	url = ../../mobile/document.git
