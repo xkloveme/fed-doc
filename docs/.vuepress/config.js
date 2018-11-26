@@ -5,15 +5,15 @@ module.exports = {
     nav: [
       {
         text: 'Hekr-components',
-        link: 'http://10.10.1.2:7777/hekr-components/index.html'
+        link: '/hekr-components/index.html'
       },
       {
         text: 'Auto',
-        link: 'http://10.10.1.2:7777/auto/index.html'
+        link: '/auto/index.html'
       },
       {
         text: 'SDK',
-        link: 'http://10.10.1.2:7777/sdk'
+        link: '/sdk/'
       }
     ],
     sidebar: 'auto',

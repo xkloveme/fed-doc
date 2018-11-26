@@ -8,9 +8,9 @@
 ## 目录
 
 * [NPM源使用](./NPM源使用.md)
-* [virtual](./virtual.md)
-* [hekr-cli](./hekr-cli.md)
-* [hekr-h5-sdk](./hekr-h5-sdk.md)
+* [virtual](./virtual/README.md)
+* [hekr-cli](./hekr-cli/README.md)
+* [hekr-h5-sdk](./sdk/README.md)
 * [前端文件资源管理](./前端文件资源管理.md)
 * [通用H5页面开发](./通用H5页面开发.md)
 * [设备群控](./设备群控.md)
