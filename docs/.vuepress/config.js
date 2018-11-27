@@ -14,6 +14,10 @@ module.exports = {
       {
         text: 'SDK',
         link: '/sdk/'
+      },
+      {
+        text: 'layer',
+        link: '/layer/index.html'
       }
     ],
     sidebar: 'auto',
