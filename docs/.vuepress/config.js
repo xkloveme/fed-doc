@@ -5,11 +5,11 @@ module.exports = {
     nav: [
       {
         text: 'Hekr-components',
-        link: '/hekr-components/'
+        link: 'http://10.10.1.2:7777/hekr-components/'
       },
       {
         text: 'Auto',
-        link: '/auto/'
+        link: 'http://10.10.1.2:7777/auto/'
       },
       {
         text: 'SDK',
@@ -17,7 +17,7 @@ module.exports = {
       },
       {
         text: 'layer',
-        link: '/layer/'
+        link: 'http://10.10.1.2:7777/layer/'
       }
     ],
     sidebar: 'auto',
