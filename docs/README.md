@@ -11,6 +11,7 @@
 * [virtual](./virtual/README.md)
 * [hekr-cli](./hekr-cli/README.md)
 * [hekr-h5-sdk](./sdk/README.md)
+* [蓝牙开发文档](./蓝牙开发文档/README.md)
 * [前端文件资源管理](./前端文件资源管理.md)
 * [通用H5页面开发](./通用H5页面开发.md)
 * [设备群控](./设备群控.md)
