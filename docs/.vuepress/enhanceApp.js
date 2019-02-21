@@ -8,13 +8,9 @@ export default ({
 
   // 修复路由匹配错误问题
   router.push = (route, ...args) => {
-    push.call(
-      router,
-      {
-        ...route,
-        path: decodeURI(route.path)
-      },
-      ...args
-    )
+    if (route.path) {
+      route.path = encodeURI(decodeURI(route.path))
+    }
+    push.call(router, route, ...args)
   }
 }
