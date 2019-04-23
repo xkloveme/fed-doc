@@ -1,4 +1,11 @@
-# Fed-docs
+---
+home: true
+heroText: Fed-docs
+tagline: 前端技术文档
+footer: MIT Licensed | Copyright © 2019-present Fed-docs
+---
+
+## Fed-docs
 
 1. 公司官方文档：[http://docs.hekr.me](http://docs.hekr.me)
 2. console 云平台：[https://console.hekr.me](https://console.hekr.me)
@@ -29,5 +36,6 @@
 
 ## 维消宝
 
-- [维消宝权限相关介绍](./维消宝权限相关介绍.md)
-- [维消宝大屏功能梳理](./维消宝大屏功能梳理.md)
+- [维消宝权限相关介绍](./维消宝/维消宝权限相关介绍.md)
+- [维消宝大屏功能梳理](./维消宝/维消宝大屏功能梳理.md)
+- [维消宝设备接入指南](./维消宝/维消宝设备接入指南.md)

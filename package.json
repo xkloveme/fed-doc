@@ -21,6 +21,16 @@
   "author": "nashaofu",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^0.14.9"
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.47",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.47",
+    "node-sass": "^4.11.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "vuepress": "1.0.0-alpha.47"
+  },
+  "dependencies": {
+    "markdown-it-checkbox": "^1.1.0",
+    "markdown-it-kbd": "^2.0.0"
   }
 }
