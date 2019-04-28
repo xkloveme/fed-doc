@@ -15,9 +15,7 @@ footer: MIT Licensed | Copyright © 2019-present Fed-docs
 ## 目录
 
 - [NPM 源使用](./NPM源使用.md)
-- [virtual](./virtual/README.md)
 - [hekr-cli](./hekr-cli/README.md)
-- [hekr-h5-sdk](./sdk/README.md)
 - [蓝牙开发文档](./蓝牙开发文档/README.md)
 - [前端文件资源管理](./前端文件资源管理.md)
 - [通用 H5 页面开发](./通用H5页面开发.md)
@@ -32,7 +30,6 @@ footer: MIT Licensed | Copyright © 2019-present Fed-docs
 - [丛云 APP 接口说明](./丛云APP接口说明.md)
 - [微信开发简要说明](./微信开发简要说明.md)
 - [消防 APP 模板使用说明](./消防APP模板使用说明/README.md)
-- [APP 桥接对象 Matrix 说明](./matrix.md)
 
 ## 维消宝
 
