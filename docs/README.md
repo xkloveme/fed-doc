@@ -37,3 +37,4 @@ footer: MIT Licensed | Copyright © 2019-present Fed-docs
 - [维消宝大屏功能梳理](./维消宝/维消宝大屏功能梳理.md)
 - [维消宝设备接入指南](./维消宝/维消宝设备接入指南.md)
 - [维消宝 Docker 部署](./维消宝/维消宝Docker部署.md)
+- [维消宝换皮相关流程](./维消宝/维消宝换皮相关流程.md)
