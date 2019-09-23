@@ -1,6 +1,14 @@
+/*
+ * @describe: 描述
+ * @Author: superDragon
+ * @Date: 2019-04-23 10:56:23
+ * @LastEditors: superDragon
+ * @LastEditTime: 2019-09-23 14:20:45
+ */
 module.exports = {
   title: 'Fed-docs',
   description: 'Hekr前端文档',
+  base: '/fed-doc/',
   themeConfig: {
     nav: [
       {
