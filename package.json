@@ -21,13 +21,13 @@
   "author": "nashaofu",
   "license": "ISC",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.47",
-    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.47",
-    "node-sass": "^4.11.0",
-    "pug": "^2.0.3",
+    "@vuepress/plugin-back-to-top": "^1.1.0",
+    "@vuepress/plugin-medium-zoom": "^1.1.0",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^7.1.0",
-    "vuepress": "1.0.0-alpha.47"
+    "sass-loader": "^8.0.0",
+    "vuepress": "^1.1.0"
   },
   "dependencies": {
     "markdown-it-checkbox": "^1.1.0",
