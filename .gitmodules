@@ -1,12 +1,12 @@
-[submodule "docs/sdk"]
-	path = docs/sdk
-	url = ../sdk.git
-[submodule "docs/virtual"]
-	path = docs/virtual
-	url = ../virtual.git
-[submodule "docs/hekr-cli"]
-	path = docs/hekr-cli
-	url = ../hekr-cli.git
-[submodule "docs/mobile-docs"]
-	path = docs/mobile-docs
-	url = ../../mobile/document.git
+# [submodule "docs/sdk"]
+# 	path = docs/sdk
+# 	url = ../sdk.git
+# [submodule "docs/virtual"]
+# 	path = docs/virtual
+# 	url = ../virtual.git
+# [submodule "docs/hekr-cli"]
+# 	path = docs/hekr-cli
+# 	url = ../hekr-cli.git
+# [submodule "docs/mobile-docs"]
+# 	path = docs/mobile-docs
+# 	url = ../../mobile/document.git
