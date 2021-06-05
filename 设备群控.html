@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>群控功能开发说明文档 | Fed-docs</title>
+    <meta name="description" content="Hekr前端文档">
+    
+    
+    <link rel="preload" href="/fed-doc/assets/css/0.styles.79df93a7.css" as="style"><link rel="preload" href="/fed-doc/assets/js/app.e912bd36.js" as="script"><link rel="preload" href="/fed-doc/assets/js/2.03965f8c.js" as="script"><link rel="preload" href="/fed-doc/assets/js/26.468e842a.js" as="script"><link rel="prefetch" href="/fed-doc/assets/js/10.b8994720.js"><link rel="prefetch" href="/fed-doc/assets/js/11.0ec545d6.js"><link rel="prefetch" href="/fed-doc/assets/js/12.02c16ef5.js"><link rel="prefetch" href="/fed-doc/assets/js/13.6ac43ad1.js"><link rel="prefetch" href="/fed-doc/assets/js/14.d408c93e.js"><link rel="prefetch" href="/fed-doc/assets/js/15.4f0d59db.js"><link rel="prefetch" href="/fed-doc/assets/js/16.82f80a83.js"><link rel="prefetch" href="/fed-doc/assets/js/17.f507f9c3.js"><link rel="prefetch" href="/fed-doc/assets/js/18.22dfb34c.js"><link rel="prefetch" href="/fed-doc/assets/js/19.2a3a415d.js"><link rel="prefetch" href="/fed-doc/assets/js/20.aa1492a8.js"><link rel="prefetch" href="/fed-doc/assets/js/21.c70552a9.js"><link rel="prefetch" href="/fed-doc/assets/js/22.f6b81080.js"><link rel="prefetch" href="/fed-doc/assets/js/23.a75caa1c.js"><link rel="prefetch" href="/fed-doc/assets/js/24.43c1f6cd.js"><link rel="prefetch" href="/fed-doc/assets/js/25.9b841371.js"><link rel="prefetch" href="/fed-doc/assets/js/27.6c7a709f.js"><link rel="prefetch" href="/fed-doc/assets/js/28.a52990ba.js"><link rel="prefetch" href="/fed-doc/assets/js/29.f54cd8f7.js"><link rel="prefetch" href="/fed-doc/assets/js/3.253f865d.js"><link rel="prefetch" href="/fed-doc/assets/js/4.4e7ec42f.js"><link rel="prefetch" href="/fed-doc/assets/js/5.80de3d18.js"><link rel="prefetch" href="/fed-doc/assets/js/6.e4efd90d.js"><link rel="prefetch" href="/fed-doc/assets/js/7.a425c80c.js"><link rel="prefetch" href="/fed-doc/assets/js/8.70b491c7.js"><link rel="prefetch" href="/fed-doc/assets/js/9.70ba6f78.js">
+    <link rel="stylesheet" href="/fed-doc/assets/css/0.styles.79df93a7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/fed-doc/" class="home-link router-link-active"><!----> <span class="site-name">Fed-docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="http://10.10.1.2:7777/hekr-components/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Hekr-components
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://10.10.1.2:7777/auto/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Auto
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/fed-doc/sdk/" class="nav-link">SDK</a></div><div class="nav-item"><a href="http://10.10.1.2:7777/layer/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  layer
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="http://gitlab.hekr.me/front-end/fed-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitLab
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="http://10.10.1.2:7777/hekr-components/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Hekr-components
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://10.10.1.2:7777/auto/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Auto
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/fed-doc/sdk/" class="nav-link">SDK</a></div><div class="nav-item"><a href="http://10.10.1.2:7777/layer/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  layer
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="http://gitlab.hekr.me/front-end/fed-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitLab
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>群控功能开发说明文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fed-doc/%E8%AE%BE%E5%A4%87%E7%BE%A4%E6%8E%A7.html#何为群控" class="sidebar-link">何为群控</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/fed-doc/%E8%AE%BE%E5%A4%87%E7%BE%A4%E6%8E%A7.html#群控设备" class="sidebar-link">群控设备</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/fed-doc/%E8%AE%BE%E5%A4%87%E7%BE%A4%E6%8E%A7.html#开发注意项" class="sidebar-link">开发注意项</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/fed-doc/%E8%AE%BE%E5%A4%87%E7%BE%A4%E6%8E%A7.html#app-vue" class="sidebar-link">App.vue</a></li><li class="sidebar-sub-header"><a href="/fed-doc/%E8%AE%BE%E5%A4%87%E7%BE%A4%E6%8E%A7.html#mutations-js" class="sidebar-link">mutations.js</a></li><li class="sidebar-sub-header"><a href="/fed-doc/%E8%AE%BE%E5%A4%87%E7%BE%A4%E6%8E%A7.html#getters-js" class="sidebar-link">getters.js</a></li><li class="sidebar-sub-header"><a href="/fed-doc/%E8%AE%BE%E5%A4%87%E7%BE%A4%E6%8E%A7.html#actions-js" class="sidebar-link">actions.js</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="群控功能开发说明文档"><a href="#群控功能开发说明文档" aria-hidden="true" class="header-anchor">#</a> 群控功能开发说明文档</h1> <blockquote><p>群控是在单品设备控制页面的基础上开发，这里只对群控功能开发作说明，以<a href="http://gitlab.hekr.me/pingping.zhang/hk-socket-groupcontrol-vue" target="_blank" rel="noopener noreferrer">插座的代码<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>为例子。</p></blockquote> <h2 id="何为群控"><a href="#何为群控" aria-hidden="true" class="header-anchor">#</a> 何为群控</h2> <p>群控就是某个产品设备支持向多个设备发送、接收指令的功能，所以在普通的设备控制页面的基础上增加了群控的功能。</p> <h2 id="群控设备"><a href="#群控设备" aria-hidden="true" class="header-anchor">#</a> 群控设备</h2> <p>群控设备不是实际意义上存在的真实设备，只是为了和单品设备作区别，才叫为群控设备。实际指的是通过接口对多个设备建成群组，从而可以统一下发操作指令。</p> <h2 id="开发注意项"><a href="#开发注意项" aria-hidden="true" class="header-anchor">#</a> 开发注意项</h2> <blockquote><p>在app webview中的Url中，如果存在groud和groudId两个参数，且值不为空，则当前为群组群控</p></blockquote> <h3 id="app-vue"><a href="#app-vue" aria-hidden="true" class="header-anchor">#</a> App.vue</h3> <p>进入首页时需要判断当前是否为群组群控, 如果当前为群组群控，则需要调用群组接口获取当前账号所有的设备群组</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> query <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$hekr<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 开发时可自己定义 groupId, group</span>
+<span class="token comment">// query['groupId'] = '9c28ab0b200b4d208b01e9f670337b7f'</span>
+<span class="token comment">// query['group'] = true</span>
+<span class="token comment">// this.fetchDevice()</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>query<span class="token punctuation">.</span>group <span class="token operator">&amp;&amp;</span> query<span class="token punctuation">.</span>group<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'true'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">fetchGroup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 判断当前群组是否存在，如不存在，需要提示无当前群控群组</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>group<span class="token punctuation">[</span>query<span class="token punctuation">[</span><span class="token string">'groupId'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">showNoGroup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+      deviceName <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>groupName
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getTitle</span><span class="token punctuation">(</span>deviceName<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+    isGroup<span class="token punctuation">:</span> query<span class="token punctuation">.</span>group<span class="token punctuation">,</span>
+    groupId<span class="token punctuation">:</span> query<span class="token punctuation">.</span>groupId
+  <span class="token punctuation">}</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 通过监听 notifyDevEvent 获取群控上报数据</span>
+document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'notifyDevEvent'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> detail <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>group<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>detail <span class="token operator">||</span> <span class="token operator">!</span>detail<span class="token punctuation">.</span>params<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>detail<span class="token punctuation">.</span>action <span class="token operator">===</span> <span class="token string">'devSend'</span> <span class="token operator">&amp;&amp;</span> detail<span class="token punctuation">.</span>params<span class="token punctuation">.</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> curData <span class="token operator">=</span> detail<span class="token punctuation">.</span>params<span class="token punctuation">.</span>data
+      curData<span class="token punctuation">[</span><span class="token string">'devTid'</span><span class="token punctuation">]</span> <span class="token operator">=</span> detail<span class="token punctuation">.</span>params<span class="token punctuation">.</span>devTid
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span>curData<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><h3 id="mutations-js"><a href="#mutations-js" aria-hidden="true" class="header-anchor">#</a> mutations.js</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> isArray <span class="token keyword">from</span> <span class="token string">'lodash/isArray'</span>
+<span class="token keyword">import</span> findIndex <span class="token keyword">from</span> <span class="token string">'lodash/findIndex'</span>
+<span class="token keyword">import</span> find <span class="token keyword">from</span> <span class="token string">'lodash/find'</span>
+<span class="token keyword">import</span> cloneDeep <span class="token keyword">from</span> <span class="token string">'lodash/cloneDeep'</span>
+<span class="token comment">// 获取当前用户账户下绑定设备，然后存储，添加设备、列举设备列表时需要</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">setDevice</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  state<span class="token punctuation">.</span>device <span class="token operator">=</span> data
+<span class="token punctuation">}</span>
+<span class="token comment">// 存储当前群组名称</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">setGroupName</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  state<span class="token punctuation">.</span>groupName <span class="token operator">=</span> val
+<span class="token punctuation">}</span>
+<span class="token comment">// 修改当前群组名称</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">modifyGroupName</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  state<span class="token punctuation">.</span>groupName <span class="token operator">=</span> val
+  state<span class="token punctuation">.</span>oGroupName <span class="token operator">=</span> val
+<span class="token punctuation">}</span>
+<span class="token comment">// 存储当前用户下的所有群组</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">setGroup</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> group <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span><span class="token function">cloneDeep</span><span class="token punctuation">(</span>state<span class="token punctuation">.</span>group<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">const</span> oGroup <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span><span class="token function">cloneDeep</span><span class="token punctuation">(</span>state<span class="token punctuation">.</span>oGroup<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isArray</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>val<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>noGroup <span class="token operator">=</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+  val<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    group<span class="token punctuation">[</span>item<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span> <span class="token operator">=</span> item
+    oGroup<span class="token punctuation">[</span>item<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span> <span class="token operator">=</span> item
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  group<span class="token punctuation">[</span>val<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span> <span class="token operator">=</span> val
+  oGroup<span class="token punctuation">[</span>val<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span> <span class="token operator">=</span> val
+  <span class="token punctuation">}</span>
+  state<span class="token punctuation">.</span>group <span class="token operator">=</span> group
+  state<span class="token punctuation">.</span>oGroup <span class="token operator">=</span> oGroup
+<span class="token punctuation">}</span>
+<span class="token comment">// 删除当前群组中的设备</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">deleteDevice</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> group <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span><span class="token function">cloneDeep</span><span class="token punctuation">(</span>state<span class="token punctuation">.</span>group<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">const</span> oGroup <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span><span class="token function">cloneDeep</span><span class="token punctuation">(</span>state<span class="token punctuation">.</span>oGroup<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">const</span> deviceList <span class="token operator">=</span> group<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span> <span class="token operator">?</span> group<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span><span class="token punctuation">.</span>deviceList <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  data<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> index <span class="token operator">=</span> <span class="token function">findIndex</span><span class="token punctuation">(</span>deviceList<span class="token punctuation">,</span> <span class="token parameter">dev</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> dev<span class="token punctuation">.</span>devTid <span class="token operator">===</span> item<span class="token punctuation">.</span>devTid <span class="token operator">||</span> dev<span class="token punctuation">.</span>ctrlKey <span class="token operator">===</span> item<span class="token punctuation">.</span>ctrlKey
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    deviceList<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token comment">// 如果当前群组所有设备都被删除，则当前群组也被删除</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>deviceList<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 处理一下群组被删除的情况</span>
+  state<span class="token punctuation">.</span>noGroup <span class="token operator">=</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+  group<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>group<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  deviceList
+  <span class="token punctuation">}</span>
+  oGroup<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>group<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  deviceList
+  <span class="token punctuation">}</span>
+  state<span class="token punctuation">.</span>group <span class="token operator">=</span> group
+  state<span class="token punctuation">.</span>oGroup <span class="token operator">=</span> oGroup
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 添加设备到当前群组</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">addDevice</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> group <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span><span class="token function">cloneDeep</span><span class="token punctuation">(</span>state<span class="token punctuation">.</span>group<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">const</span> oGroup <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span><span class="token function">cloneDeep</span><span class="token punctuation">(</span>state<span class="token punctuation">.</span>oGroup<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">const</span> deviceList <span class="token operator">=</span> group<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span> <span class="token operator">?</span> group<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span><span class="token punctuation">.</span>deviceList <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token comment">// 添加设备到组里</span>
+  data<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  deviceList<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  state<span class="token punctuation">.</span>noGroup <span class="token operator">=</span> <span class="token boolean">false</span>
+  group<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>group<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  deviceList
+  <span class="token punctuation">}</span>
+  oGroup<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>group<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  deviceList
+  <span class="token punctuation">}</span>
+  state<span class="token punctuation">.</span>group <span class="token operator">=</span> group
+  state<span class="token punctuation">.</span>oGroup <span class="token operator">=</span> oGroup
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 更新当前群组设备状态</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">updateDevice</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> device <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token operator">...</span><span class="token function">cloneDeep</span><span class="token punctuation">(</span>state<span class="token punctuation">.</span>device<span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+  state<span class="token punctuation">.</span>device <span class="token operator">=</span> device<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> temp <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token parameter">a</span> <span class="token operator">=&gt;</span> a<span class="token punctuation">.</span>devTid <span class="token operator">===</span> item<span class="token punctuation">.</span>devTid<span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>temp<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    item <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>item<span class="token punctuation">,</span>
+    <span class="token operator">...</span>temp
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> item
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 显示群控结果</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">setShowGroupResult</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  state<span class="token punctuation">.</span>showGroupResult <span class="token operator">=</span> val
+<span class="token punctuation">}</span>
+<span class="token comment">// 显示群控中</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">setShowGroupMask</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  state<span class="token punctuation">.</span>showGroupMask <span class="token operator">=</span> val
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="getters-js"><a href="#getters-js" aria-hidden="true" class="header-anchor">#</a> getters.js</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> findIndex <span class="token keyword">from</span> <span class="token string">'lodash/findIndex'</span>
+<span class="token keyword">import</span> cloneDeep <span class="token keyword">from</span> <span class="token string">'lodash/cloneDeep'</span>
+<span class="token comment">// 过滤不是当前群组的设备，在群组的添加设备页面需要使用</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">getDevicesNotInGroup</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> device<span class="token punctuation">,</span> groupId<span class="token punctuation">,</span> group <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> deviceList <span class="token operator">=</span> group<span class="token punctuation">[</span>groupId<span class="token punctuation">]</span> <span class="token operator">?</span> group<span class="token punctuation">[</span>groupId<span class="token punctuation">]</span><span class="token punctuation">.</span>deviceList <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token keyword">return</span> <span class="token function">cloneDeep</span><span class="token punctuation">(</span>device<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> index <span class="token operator">=</span> <span class="token function">findIndex</span><span class="token punctuation">(</span>deviceList<span class="token punctuation">,</span> <span class="token parameter">dev</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> dev<span class="token punctuation">.</span>devTid <span class="token operator">===</span> item<span class="token punctuation">.</span>devTid <span class="token operator">||</span> dev<span class="token punctuation">.</span>ctrlKey <span class="token operator">===</span> item<span class="token punctuation">.</span>ctrlKey
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> index <span class="token operator">===</span> <span class="token operator">-</span><span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 过滤出当前群组的设备，在管理群组设备页面需要使用</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">getDevicesInGroup</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> device<span class="token punctuation">,</span> groupId<span class="token punctuation">,</span> group <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// console.log(device)</span>
+  <span class="token keyword">const</span> deviceList <span class="token operator">=</span> group<span class="token punctuation">[</span>groupId<span class="token punctuation">]</span> <span class="token operator">?</span> group<span class="token punctuation">[</span>groupId<span class="token punctuation">]</span><span class="token punctuation">.</span>deviceList <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token keyword">return</span> <span class="token function">cloneDeep</span><span class="token punctuation">(</span>device<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> index <span class="token operator">=</span> <span class="token function">findIndex</span><span class="token punctuation">(</span>deviceList<span class="token punctuation">,</span> <span class="token parameter">dev</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> dev<span class="token punctuation">.</span>devTid <span class="token operator">===</span> item<span class="token punctuation">.</span>devTid <span class="token operator">||</span> dev<span class="token punctuation">.</span>ctrlKey <span class="token operator">===</span> item<span class="token punctuation">.</span>ctrlKey
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> index <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 群组发送命令之后，获取各设备返回结果，提示群控结果使用</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">getDevicesStatus</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> device<span class="token punctuation">,</span> groupId<span class="token punctuation">,</span> group <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> deviceList <span class="token operator">=</span> group<span class="token punctuation">[</span>groupId<span class="token punctuation">]</span> <span class="token operator">?</span> group<span class="token punctuation">[</span>groupId<span class="token punctuation">]</span><span class="token punctuation">.</span>deviceList <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token keyword">return</span> <span class="token function">cloneDeep</span><span class="token punctuation">(</span>device<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> index <span class="token operator">=</span> <span class="token function">findIndex</span><span class="token punctuation">(</span>deviceList<span class="token punctuation">,</span> <span class="token parameter">dev</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> dev<span class="token punctuation">.</span>devTid <span class="token operator">===</span> item<span class="token punctuation">.</span>devTid <span class="token operator">||</span> dev<span class="token punctuation">.</span>ctrlKey <span class="token operator">===</span> item<span class="token punctuation">.</span>ctrlKey
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> index <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> item<span class="token punctuation">.</span>deviceName <span class="token operator">||</span> item<span class="token punctuation">.</span>name <span class="token operator">||</span> item<span class="token punctuation">.</span>cidName<span class="token punctuation">,</span>
+  devTid<span class="token punctuation">:</span> item<span class="token punctuation">.</span>devTid<span class="token punctuation">,</span>
+  success<span class="token punctuation">:</span> item<span class="token punctuation">.</span>success <span class="token operator">||</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  status<span class="token punctuation">:</span> item<span class="token punctuation">.</span>status <span class="token operator">||</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="actions-js"><a href="#actions-js" aria-hidden="true" class="header-anchor">#</a> actions.js</h3> <p>actions.js 文件中群组相关代码，因为群控下发指令时，数据是一台设备上报一条数据，所以需要缓存数据，等待所有设备都上报数据后，再显示控制结果，限时7s。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> findIndex <span class="token keyword">from</span> <span class="token string">'lodash/findIndex'</span>
+<span class="token keyword">import</span> find <span class="token keyword">from</span> <span class="token string">'lodash/find'</span>
+<span class="token keyword">import</span> debounce <span class="token keyword">from</span> <span class="token string">'lodash/debounce'</span>
+<span class="token comment">// 缓存群组上报数据</span>
+<span class="token keyword">let</span> buffer <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token comment">// 设置超时7s</span>
+<span class="token keyword">const</span> setTimeOut <span class="token operator">=</span> <span class="token function">debounce</span><span class="token punctuation">(</span><span class="token parameter">dispatch</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'updateDevice'</span><span class="token punctuation">)</span>
+  <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'showResult'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">7000</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">getState</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit<span class="token punctuation">,</span> state<span class="token punctuation">,</span> getters<span class="token punctuation">,</span> dispatch <span class="token punctuation">}</span><span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>state<span class="token punctuation">.</span>isGroup<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'setState'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>state<span class="token punctuation">.</span>showGroupMask<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> getDevicesInGroup <span class="token punctuation">}</span> <span class="token operator">=</span> getters
+
+  <span class="token comment">// 保证设备实在群组中的</span>
+  <span class="token keyword">const</span> inGroup <span class="token operator">=</span> <span class="token function">findIndex</span><span class="token punctuation">(</span>getDevicesInGroup<span class="token punctuation">,</span> <span class="token parameter">item</span> <span class="token operator">=&gt;</span> data<span class="token punctuation">.</span>devTid <span class="token operator">===</span> item<span class="token punctuation">.</span>devTid<span class="token punctuation">)</span>
+  <span class="token comment">// 上报的设备没在群组中的时候直接退出函数</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>inGroup <span class="token operator">===</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 看是否在缓存区有数据了</span>
+  <span class="token keyword">const</span> index <span class="token operator">=</span> <span class="token function">findIndex</span><span class="token punctuation">(</span>buffer<span class="token punctuation">,</span> <span class="token parameter">item</span> <span class="token operator">=&gt;</span> data<span class="token punctuation">.</span>devTid <span class="token operator">===</span> item<span class="token punctuation">.</span>devTid<span class="token punctuation">)</span>
+  <span class="token comment">// 没有在缓冲区找到这个数据</span>
+  <span class="token comment">// 就把当前状态添加到缓冲区</span>
+  <span class="token comment">// 否者就覆盖原有的数据</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">===</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    buffer<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    buffer<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">=</span> data
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 当缓冲区和在群组中的设备一样多的时候就表示所有设备都上报了数据</span>
+  <span class="token comment">// 应该立即显示结果，并清空缓冲区</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>buffer<span class="token punctuation">.</span>length <span class="token operator">===</span> getDevicesInGroup<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 取消超时</span>
+    setTimeOut<span class="token punctuation">.</span><span class="token function">cancel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'updateDevice'</span><span class="token punctuation">)</span>
+    <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'showResult'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 显示群控结果</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">showResult</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit<span class="token punctuation">,</span> dispatch <span class="token punctuation">}</span><span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'setShowGroupResult'</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'showMask'</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  buffer <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'updateDevice'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 更行设备数据</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">updateDevice</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit<span class="token punctuation">,</span> getters <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> getDevicesStatus <span class="token punctuation">}</span> <span class="token operator">=</span> getters
+  <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'updateDevice'</span><span class="token punctuation">,</span> getDevicesStatus<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 查找缓冲区中的数据</span>
+  <span class="token comment">// 并把缓冲区的数据更新到store</span>
+  <span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>buffer<span class="token punctuation">,</span> <span class="token parameter">a</span> <span class="token operator">=&gt;</span> item<span class="token punctuation">.</span>devTid <span class="token operator">===</span> a<span class="token punctuation">.</span>devTid<span class="token punctuation">)</span>
+  <span class="token comment">// console.log('item a .....', item, buffer, data)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    item<span class="token punctuation">.</span>status <span class="token operator">=</span> data<span class="token punctuation">.</span>status
+    item<span class="token punctuation">.</span>success <span class="token operator">=</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    item<span class="token punctuation">.</span>status <span class="token operator">=</span> <span class="token number">0</span>
+    item<span class="token punctuation">.</span>success <span class="token operator">=</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> item
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  buffer <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 显示群控结果</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">showMask</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit <span class="token punctuation">}</span><span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'setShowGroupMask'</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 拉取设备</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">fetchDevice</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> ajax <span class="token operator">=</span> $hekr<span class="token punctuation">.</span>fetch<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/device</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  params<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    size<span class="token punctuation">:</span> <span class="token number">100000</span>
+  <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  ajax<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> data <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> device <span class="token operator">=</span> data<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> $hekr<span class="token punctuation">.</span>device<span class="token punctuation">.</span>mid <span class="token operator">===</span> item<span class="token punctuation">.</span>mid<span class="token punctuation">)</span>
+  <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'setDevice'</span><span class="token punctuation">,</span> device<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> ajax
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 拉取群组</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">fetchGroup</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit<span class="token punctuation">,</span> state <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// let userUrl = $hekr.URL.user</span>
+  <span class="token keyword">const</span> ajax <span class="token operator">=</span> $hekr<span class="token punctuation">.</span>fetch<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/group</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  ajax<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> data <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> group <span class="token operator">=</span> data<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> $hekr<span class="token punctuation">.</span>device<span class="token punctuation">.</span>mid <span class="token operator">===</span> item<span class="token punctuation">.</span>groupMid<span class="token punctuation">)</span>
+  <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'setGroup'</span><span class="token punctuation">,</span> group<span class="token punctuation">)</span>
+  <span class="token comment">// 群控模式下时，会把群组名称给更新</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> currentGroup <span class="token operator">=</span> state<span class="token punctuation">.</span>group<span class="token punctuation">[</span>state<span class="token punctuation">.</span>groupId<span class="token punctuation">]</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>currentGroup<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> groupName <span class="token operator">=</span> <span class="token punctuation">{</span>
+      groupName<span class="token punctuation">:</span> currentGroup<span class="token punctuation">.</span>groupName<span class="token punctuation">,</span>
+      oGroupName<span class="token punctuation">:</span> currentGroup<span class="token punctuation">.</span>groupName
+    <span class="token punctuation">}</span>
+    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'setState'</span><span class="token punctuation">,</span> groupName<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> ajax
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 创建群组</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">createGroup</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit <span class="token punctuation">}</span><span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// let userUrl = $hekr.URL.user</span>
+  <span class="token keyword">const</span> ajax <span class="token operator">=</span> $hekr<span class="token punctuation">.</span>fetch<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/group</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>data<span class="token punctuation">,</span>
+  desc<span class="token punctuation">:</span> data<span class="token punctuation">.</span>groupName
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  ajax<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> data <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+  <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'setGroup'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> ajax
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 创建群组</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">deleteDevice</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit<span class="token punctuation">,</span> state <span class="token punctuation">}</span><span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> ajax <span class="token operator">=</span> $hekr<span class="token punctuation">.</span>fetch<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/group/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>state<span class="token punctuation">.</span>groupId<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  data
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  ajax<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'deleteDevice'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> ajax
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 添加群组设备</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">addDevice</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit<span class="token punctuation">,</span> state <span class="token punctuation">}</span><span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> ajax <span class="token operator">=</span> $hekr<span class="token punctuation">.</span>fetch<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/group/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>state<span class="token punctuation">.</span>groupId<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+  ajax<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'addDevice'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> ajax
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 需改群组名称</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">modifyGroupName</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit<span class="token punctuation">,</span> state <span class="token punctuation">}</span><span class="token punctuation">,</span> name</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> ajax <span class="token operator">=</span> $hekr<span class="token punctuation">.</span>fetch<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/group/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>state<span class="token punctuation">.</span>groupId<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  newGroupName<span class="token punctuation">:</span> name
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  ajax<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'modifyGroupName'</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> ajax
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="http://gitlab.hekr.me/front-end/fed-docs/edit/master/设备群控.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">9/12/2018, 2:03:07 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/fed-doc/assets/js/app.e912bd36.js" defer></script><script src="/fed-doc/assets/js/2.03965f8c.js" defer></script><script src="/fed-doc/assets/js/26.468e842a.js" defer></script>
+  </body>
+</html>
